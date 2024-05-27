@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 300px;
+  box-shadow: 0 0 10px 3px white;
+  background: rgba(255, 166, 0, 0.6);
+  opacity: 0;
+  animation: anim 8s;
+  filter: hue-rotate(0deg);
+}
+
+@keyframes anim {
+  to {
+    top: -250px;
+    left: var(--left);
+    opacity: 1;
+    filter: hue-rotate(720deg);
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 150px;
+  color: rgba(128, 128, 128, 0.901);
+}
